@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            background-color: rgb(29, 29, 28);
+            height: 100vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+        }
+        .container{
+            background-color: white;
+            color: black;
+            border-radius: 6px;
+            box-shadow: 2px 2px 5px white;
+            height: 220px;
+            width: 340px;
+            display: block;
+        }
+        .currency-title{
+            text-align: center;
+            padding-top: 9px;
+            padding-bottom: 20px;
+        }
+        .right-section{
+            margin-bottom: 10px;
+            display: inline-block;
+            height: 50px;
+            margin-left: 20px;
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            width: 150px;           
+        }
+        .left-section{
+            margin-bottom: 10px;
+            display: inline-block;
+            height: 50px;
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+            width: 150px; 
+        }
+        .currency-select{
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            border: 1px solid blue;
+            text-align: center;
+        }
+        .currency-select:focus{
+            outline: none;
+        }
+        .currency1,.currency2{
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            border: 1px solid green;
+            text-align: center;
+
+        }
+        .currency1:focus{
+            outline: none;
+        }
+        .currency2:focus{
+            outline: none;
+        }
+        .btn{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+            padding-top: 20px;
+        }
+        button{
+            padding: 7px 0;
+            width: 70px;
+            text-align: center;
+            border-radius: 4px;
+            font-size: 16px;
+            border: none;
+            background-color: grey;
+            cursor: pointer;
+            transition: background-color 0.25s;
+        }
+        button:hover{
+            background-color: black;
+            color:white;
+        }
+        .err{
+            margin-top: 10px;
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            display: none;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+            <div class="currency-title">
+                Currency Converter 
+            </div>
+            <div class="right-section">
+                <div class="right">
+                    <select name="" class="currency-select">
+                    </select>
+                    <input type="text" class="currency1">
+                </div>
+            </div>
+            <div class="left-section">
+                <div class="left">
+                    <select name="" class="currency-select">
+    
+                    </select>
+                    <input type="text" class="currency2">
+                </div>
+
+            </div>
+           
+            <div class="btn">
+                <button class="convert-btn">Convert</button>
+                <div class="err">Hello</div>
+            </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
